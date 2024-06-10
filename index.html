@@ -3,41 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OMA Ottawa Makeup Artist Booking</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>OMA Ottawa Makeup Artist</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">Book Your Makeup Appointment</h1>
-        <form id="bookingForm" class="booking-form">
-            <div class="form-group">
-                <input type="text" id="name" class="form-control" placeholder="Name" required>
-            </div>
-            <div class="form-group">
-                <input type="email" id="email" class="form-control" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-                <select id="service" class="form-control" required>
-                    <option value="Natural">$50 Natural</option>
-                    <option value="Prom">$80 Prom</option>
-                    <option value="Bridal">$100 Bridal</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <select id="artist" class="form-control" required>
-                    <option value="Selena">Selena</option>
-                    <option value="Devin">Devin</option>
-                    <option value="Grabriella">Grabriella</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <input type="date" id="date" class="form-control" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Book Appointment</button>
-        </form>
+    <div class="container">
+        <h1 class="text-center my-4">Book Your Makeup Appointment</h1>
+        
+        <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="service" class="form-label">Service:</label>
+            <select class="form-select" id="service" required>
+                <option value="Natural">Natural - $50</option>
+                <option value="Prom">Prom - $80</option>
+                <option value="Bridal">Bridal - $100</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Book Appointment</button>
     </div>
 
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
 </body>
 </html>
