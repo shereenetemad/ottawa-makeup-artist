@@ -5,48 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OMA Ottawa Makeup Artist Booking</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <h2>Book Your Makeup Appointment</h2>
-        <form id="bookingForm">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" class="form-control" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" class="form-control" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="service">Service:</span>
-                <select id="service" class="form-control" required>
-                    <option value="Natural">Natural</option>
-                    <option value="Prom">Prom</option>
-                    <option value="Bridal">Bridal</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label for="artist">Artist:</label>
-                <select id="artist" class="form-control" required>
-                    <option value="Selena">Selena</option>
-                    <option value="Devin">Devin</option>
-                    <option value="Grabriella">Grabriella</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label for="date">Date:</label>
-                <input type="date" id="date" class="form-control" required>
-            </div>
-            
-            <button type="submit" class="btn btn-primary">Book Appointment</button>
-        </form>
+    <div class="container mt-5 text-center">
+        <h1>OMA Ottawa Makeup Artist</h1>
+        <p class="lead">Wedding season is approaching... Relax, sit back, get your makeup done—we got you!</p>
+        
+        <div class="booking-section">
+            <h2>Book Your Makeup Appointment</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <input type="text" id="name" class="form-control" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <select id="service" class="form-control" required>
+                        <option value="">Select Service</option>
+                        <option value="Natural">$50 Natural</option>
+                        <option value="Prom">$80 Prom</option>
+                        <option value="Bridal">$100 Bridal</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="date" id="date" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Book Now</button>
+            </form>
+        </div>
 
-        <div id="bookingConfirmation" class="mt-4"></div>
+        <div id="artists" class="artists-section">
+            <h3>Meet The Makeup Artists</h3>
+            <p>Selena, Devin, Gabriella</p>
+        </div>
+
+        <div id="contact" class="contact-section">
+            <h3>Contact Us</h3>
+            <p>Email: OttawaMakeupArtist@Business.com</p>
+            <p>Phone: (613) 123-4567</p>
+            <p>Location: Tanger Outlet Mall, Kanata, Ottawa ON</p>
+        </div>
     </div>
 
     <script src="script.js"></script>
