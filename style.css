@@ -1,17 +1,20 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff;
+    background-color: #f4f4f9;
     color: #333;
 }
 
 .container {
-    width: 80%;
-    margin: 20px auto;
+    width: 50%;  /* Adjust the width as needed */
+    margin: auto;
     padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* Adds subtle shadow around the form container */
+    background: #fff;
 }
 
-h1, h2, h3 {
+h1.text-center {
     color: #333;
+    margin-bottom: 20px;
 }
 
 .form-group input, .form-group select {
@@ -19,6 +22,7 @@ h1, h2, h3 {
     padding: 10px;
     margin-top: 10px;
     box-sizing: border-box;
+    border-radius: 5px;  /* Rounded corners for inputs and selects */
 }
 
 .btn-primary {
@@ -28,16 +32,10 @@ h1, h2, h3 {
     color: white;
     cursor: pointer;
     margin-top: 10px;
+    width: 100%;  /* Makes the button full width */
+    border-radius: 5px;  /* Rounded corners for the button */
 }
 
 .btn-primary:hover {
     background-color: #45a049;
-}
-
-.artists-section, .contact-section {
-    margin-top: 20px;
-}
-
-.text-center {
-    text-align: center;
 }
