@@ -1,41 +1,40 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMA Ottawa Makeup Artist</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Book Your Makeup Appointment</h1>
+        
+        <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
 
-.container {
-    width: 50%;  /* Adjust the width as needed */
-    margin: auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* Adds subtle shadow around the form container */
-    background: #fff;
-}
+        <div class="mb-3">
+            <label for="service" class="form-label">Service:</label>
+            <select class="form-select" id="service" required>
+                <option value="Natural">Natural - $50</option>
+                <option value="Prom">Prom - $80</option>
+                <option value="Bridal">Bridal - $100</option>
+            </select>
+        </div>
 
-h1.text-center {
-    color: #333;
-    margin-bottom: 20px;
-}
+        <button type="submit" class="btn btn-primary">Book Appointment</button>
+    </div>
 
-.form-group input, .form-group select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    box-sizing: border-box;
-    border-radius: 5px;  /* Rounded corners for inputs and selects */
-}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+</body>
+</html>
 
-.btn-primary {
-    background-color: #4CAF50;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
-    margin-top: 10px;
-    width: 100%;  /* Makes the button full width */
-    border-radius: 5px;  /* Rounded corners for the button */
-}
-
-.btn-primary:hover {
-    background-color: #45a049;
-}
